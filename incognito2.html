@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<script src="hidediv.js"></script>
+<script src="fetchimage.js"></script>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Incognito</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- ______Intro______ -->
+      <div id="page_enter">
+        <pre>
+   
+       _                              _ __      
+      (_)___  _________  ____  ____  (_) / ____ 
+     / / __ \/ ___/ __ \/ __ `/ __ \/ / __/ __ \
+    / / / / / /__/ /_/ / /_/ / / / / / /_/ /_/ /
+   /_/_/ /_/\___/\____/\__, /_/ /_/_/\__/\____/ 
+                      /____/                   
+
+      
+    </pre
+        >
+      </div>
+
+      <!-- ______Skelet______ -->
+
+      <div class="side">
+        <div class="wrapper">
+          <div id="title">
+            <pre>
+       _                              _ __      
+      (_)___  _________  ____  ____  (_) / ____ 
+     / / __ \/ ___/ __ \/ __ `/ __ \/ / __/ __ \
+    / / / / / /__/ /_/ / /_/ / / / / / /_/ /_/ /
+   /_/_/ /_/\___/\____/\__, /_/ /_/_/\__/\____/ 
+                      /____/                   
+ 
+                     
+                    </pre
+            >
+          </div>
+
+          <div id="description">
+            &nbsp; &nbsp;We use our face on digital media platforms in order to
+            represent ourselves in the online world, a world often described as
+            the cloud, a name that represents something that we can actually
+            conceive, while in reality the internet can not just be seen by
+            looking at the sky. Cables placed deep in the ocean and data-centers
+            hidden in big boxes hide the control over its users both in online
+            as well as the offline world. We often fail to understand the
+            consequences and costs of being an online entity. Living online
+            means to be seen, and to be seen is to be recognized, to be
+            recognized is to be analyzed and to be analyzed is to be reduced to
+            information. Information that is used to govern our lives, not only
+            online, but also in offline public spaces by fueling facial
+            recognition algorithms. <br /><br />
+            &nbsp;&nbsp;Even if could actually see this happening for ourselves,
+            for a lot of people including myself, there remains a desire to be
+            included online. A fear of missing out controls the desire to remain
+            visible and to not go unnoticed. This creates a contradiction. We
+            want to remain visible, but we also do not want to be controlled. In
+            the online world to remain visible means to be controlled.
+            <br /><br />&nbsp;&nbsp;My algorithmic self acts as a proposed was
+            to deal with this contradiction, and acts as a protest constant
+            governing of the digital - and with that - the physical body. It
+            can’t be tracked, governed, controlled or nudged, as is not a human
+            being, but just a reflection of one. It doesn’t browse the internet,
+            rather it lives inside the browser. It surfs the transatlantic
+            communication cables, fly’s trough disk space, and chills in the
+            clouds, unnoticed by its algorithmic brothers and sisters that where
+            born to control. My algorithmic self runs in constant feedback loop,
+            it learns from experience as it grows older, in search for a new
+            identity. My algorithmic self takes away my fear of missing out, it
+            allows me to go unnoticed and noticed at the same time trough the
+            means of my new digital body.
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery" id="grid"></div>
+    </main>
+
+    <!-- Intro lader -->
+
+    <script>
+      var loadScreen = document.getElementById("page_enter");
+
+      document.body.insertBefore(loadScreen, document.body.firstChild);
+
+      runCounter = () => {
+        const ms = 10;
+
+        for (let i = 0; i < 101; i++) {
+          setTimeout(function () {
+            if (i == 100) {
+              hideLoadScreen();
+            }
+          }, i * ms);
+        }
+      };
+
+      hideLoadScreen = () => {
+        setTimeout(function () {
+          loadScreen.remove();
+        }, 1000);
+      };
+
+      runCounter();
+    </script>
+  </body>
+</html>
