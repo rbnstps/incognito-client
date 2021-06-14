@@ -15,18 +15,24 @@ document.addEventListener("DOMContentLoaded", () => {
   dataFetch().then((images) => {
     // images = data van de server
 
+    var firstTime = true;
+
     images.forEach((image) => {
       // voor elke afbeelding binnen de afbeelding lijst: maak figure(element) aan
-      const figure = document.createElement("figure");
-      figure.classList = "gallery";
-      figure.classList = "image";
-      const imageElement = document.createElement("img");
 
-      imageElement.src = image.url;
+      if (firstTime == true) {
+        const figure = document.createElement("figure");
+        figure.classList = "gallery";
+        figure.classList = "image";
+        const imageElement = document.createElement("img");
 
-      figure.appendChild(imageElement);
-      grid.appendChild(figure);
-      // div.classList.add("gallery__img");
+        imageElement.src = image.url;
+
+        figure.appendChild(imageElement);
+        grid.appendChild(figure);
+        // div.classList.add("gallery__img");
+        firstTime = false;
+      }
     });
   });
 });

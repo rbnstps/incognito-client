@@ -4,62 +4,43 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
   margin: 0;
-  font-family: monospace;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
 }
 
-#title {
+/* #title {
   color: blue;
   font-size: 0.5vw;
   filter: blur(1px);
   text-align: center;
-}
-
-main {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.wrapper {
-  padding: 1vw;
-}
-
-.side {
-  width: 30%;
-  height: 100%;
-  background-color: white;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  text-align: justify;
-  -webkit-overflow-scrolling: touch;
-}
+} */
 
 figure {
   margin: 0;
-}
-
-.gallery {
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  position: relative;
 }
 
 img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
-.gallery__img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.timer {
+  font-size: 7vw;
+  margin-top: 44.5vh;
+  padding-left: 4vw;
+  color: white;
+  text-align: left;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  font-weight: 100;
+
+  /* filter: blur(1px); */
 }
 
 #page_enter {
@@ -80,6 +61,14 @@ img {
   font-size: 0.5vw;
   margin-top: 16vw;
   font-size: 2vw;
-  overflow: hidden;
+
   filter: blur(2px);
+}
+
+.description {
+  padding: 5vw;
+  font-size: 1.7vw;
+  text-align: justify;
+  width: 90vw;
+  font-weight: lighter;
 }
