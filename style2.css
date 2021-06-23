@@ -12,12 +12,33 @@ body {
   color: white;
 }
 
-/* #title {
-  color: blue;
-  font-size: 0.5vw;
-  filter: blur(1px);
-  text-align: center;
-} */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+video {
+  height: 100vw;
+  margin-top: -20%;
+}
+
+.terminal {
+  padding-left: 2vw;
+  height: 41.5vh;
+  margin-top: 20vw;
+  overflow: scroll;
+  width: 98vw;
+  display: flex;
+  flex-direction: column-reverse;
+  font-size: 1.22vw;
+  color: white;
+  overflow: hidden;
+}
 
 figure {
   margin: 0;
@@ -31,7 +52,6 @@ img {
 
 .timer {
   font-size: 7vw;
-  margin-top: 44.5vh;
   padding-left: 4vw;
   color: white;
   text-align: left;
@@ -39,8 +59,7 @@ img {
   z-index: 10;
   position: fixed;
   font-weight: 100;
-
-  /* filter: blur(1px); */
+  margin-top: 73vw;
 }
 
 #page_enter {
